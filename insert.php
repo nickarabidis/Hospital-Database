@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Clinic updated successfully.';
+                                echo 'Clinic updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Clinic.';
+                                echo 'Error: Unable to update Clinic. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -52,9 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Clinic inserted successfully.';
+                                echo 'Clinic inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Clinic.';
+                                echo 'Error: Unable to insert Clinic. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -63,11 +63,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Clinic name is required
-                    echo 'Error: Clinic name is required.';
+                    echo 'Error: Clinic name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
             case 'room':
@@ -100,9 +100,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Room updated successfully.';
+                                echo 'Room updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Room.';
+                                echo 'Error: Unable to update Room. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -116,9 +116,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Room inserted successfully.';
+                                echo 'Room inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Room.';
+                                echo 'Error: Unable to insert Room. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -127,11 +127,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Room name is required
-                    echo 'Error: Room name is required.';
+                    echo 'Error: Room name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -167,9 +167,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Doctor updated successfully.';
+                                echo 'Doctor updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Doctor.';
+                                echo 'Error: Unable to update Doctor. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -183,9 +183,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Doctor inserted successfully.';
+                                echo 'Doctor inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Doctor.';
+                                echo 'Error: Unable to insert Doctor. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -194,11 +194,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Doctor AM is required
-                    echo 'Error: Doctor AM is required.';
+                    echo 'Error: Doctor AM is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -230,9 +230,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Specialty updated successfully.';
+                                echo 'Specialty updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Specialty.';
+                                echo 'Error: Unable to update Specialty. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -246,9 +246,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Specialty inserted successfully.';
+                                echo 'Specialty inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Specialty.';
+                                echo 'Error: Unable to insert Specialty. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -257,11 +257,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Specialty name is required
-                    echo 'Error: Specialty name is required.';
+                    echo 'Error: Specialty name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -299,9 +299,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient updated successfully.';
+                                echo 'Patient updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Patient.';
+                                echo 'Error: Unable to update Patient. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -315,9 +315,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient inserted successfully.';
+                                echo 'Patient inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Patient.';
+                                echo 'Error: Unable to insert Patient. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -326,11 +326,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Patient Id is required
-                    echo 'Error: Patient Id is required.';
+                    echo 'Error: Patient Id is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -362,9 +362,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Illness updated successfully.';
+                                echo 'Illness updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Illness.';
+                                echo 'Error: Unable to update Illness. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -378,9 +378,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Illness inserted successfully.';
+                                echo 'Illness inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Illness.';
+                                echo 'Error: Unable to insert Illness. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -389,11 +389,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Illness name is required
-                    echo 'Error: Illness name is required.';
+                    echo 'Error: Illness name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -427,9 +427,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Medicine updated successfully.';
+                                echo 'Medicine updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Medicine.';
+                                echo 'Error: Unable to update Medicine. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -443,9 +443,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Medicine inserted successfully.';
+                                echo 'Medicine inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Medicine.';
+                                echo 'Error: Unable to insert Medicine. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -454,11 +454,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Medicine name is required
-                    echo 'Error: Medicine name is required.';
+                    echo 'Error: Medicine name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -496,9 +496,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Provider updated successfully.';
+                                echo 'Provider updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Provider.';
+                                echo 'Error: Unable to update Provider. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -512,9 +512,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Provider inserted successfully.';
+                                echo 'Provider inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Provider.';
+                                echo 'Error: Unable to insert Provider. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -523,11 +523,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Provider AFM is required
-                    echo 'Error: Provider AFM is required.';
+                    echo 'Error: Provider AFM is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -563,9 +563,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Communication updated successfully.';
+                                echo 'Communication updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Communication.';
+                                echo 'Error: Unable to update Communication. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -579,9 +579,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Communication inserted successfully.';
+                                echo 'Communication inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Communication.';
+                                echo 'Error: Unable to insert Communication. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -590,11 +590,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Communication Id is required
-                    echo 'Error: Communication Id is required.';
+                    echo 'Error: Communication Id is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -615,9 +615,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Doctor&Specialty inserted successfully.';
+                        echo 'Doctor&Specialty inserted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to insert Doctor&Specialty.';
+                        echo 'Error: Unable to insert Doctor&Specialty. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
@@ -625,7 +625,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 } else {
                     // Error: Doctor Id and Specialty name are required
-                    echo 'Error: Doctor Id and Specialty name are required.';
+                    echo 'Error: Doctor Id and Specialty name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -646,9 +646,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Doctor&Medicine inserted successfully.';
+                        echo 'Doctor&Medicine inserted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to insert Doctor&Medicine.';
+                        echo 'Error: Unable to insert Doctor&Medicine. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
@@ -656,7 +656,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 } else {
                     // Error: Doctor Id and Medicine name are required
-                    echo 'Error: Doctor Id and Medicine name are required.';
+                    echo 'Error: Doctor Id and Medicine name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -687,9 +687,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Doctor updated successfully.';
+                                echo 'Patient&Doctor updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Patient&Doctor.';
+                                echo 'Error: Unable to update Patient&Doctor. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -703,9 +703,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Doctor inserted successfully.';
+                                echo 'Patient&Doctor inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Patient&Doctor.';
+                                echo 'Error: Unable to insert Patient&Doctor. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -714,11 +714,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Patient Id and Doctor Id are required
-                    echo 'Error: Patient Id and Doctor Id are required.';
+                    echo 'Error: Patient Id and Doctor Id are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -749,9 +749,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Illness updated successfully.';
+                                echo 'Patient&Illness updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Patient&Illness.';
+                                echo 'Error: Unable to update Patient&Illness. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -765,9 +765,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Illness inserted successfully.';
+                                echo 'Patient&Illness inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Patient&Illness.';
+                                echo 'Error: Unable to insert Patient&Illness. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -776,11 +776,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Patient Id and Illness name are required
-                    echo 'Error: Patient Id and Illness name are required.';
+                    echo 'Error: Patient Id and Illness name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -813,9 +813,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Medicine updated successfully.';
+                                echo 'Patient&Medicine updated successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to update Patient&Medicine.';
+                                echo 'Error: Unable to update Patient&Medicine. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -829,9 +829,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
-                                echo 'Patient&Medicine inserted successfully.';
+                                echo 'Patient&Medicine inserted successfully. ✅' . '<br><br>Redirecting...';
                             } else {
-                                echo 'Error: Unable to insert Patient&Medicine.';
+                                echo 'Error: Unable to insert Patient&Medicine. ❎' . '<br><br>Redirecting...';
                             }
 
                             // Close prepared statement
@@ -840,17 +840,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     } else {
                         // Error: Missing values
-                        echo 'Error: All required values are not provided.';
+                        echo 'Error: All required values are not provided. ✳️' . '<br><br>Redirecting...';
                     }
                 } else {
                     // Error: Patient Id and Medicine name are required
-                    echo 'Error: Patient Id and Medicine name are required.';
+                    echo 'Error: Patient Id and Medicine name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
         }
     } else {
         // Error: 'formType' is not set in the form data
-        echo 'Error: Form type is not provided.';
+        echo 'Error: Form type is not provided. ❎' . '<br><br>Redirecting...';
     }
 
     echo '<script>setTimeout(function(){ window.location.href = "index.php"; }, 2000);</script>';

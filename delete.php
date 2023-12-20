@@ -22,16 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Clinic deleted successfully.';
+                        echo 'Clinic deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Clinic.';
+                        echo 'Error: Unable to delete Clinic. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Clinic name is required
-                    echo 'Error: Clinic name is required.';
+                    echo 'Error: Clinic name is required. ❎' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -49,16 +49,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Room deleted successfully.';
+                        echo 'Room deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Room.';
+                        echo 'Error: Unable to delete Room. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Room name is required
-                    echo 'Error: Room name is required.';
+                    echo 'Error: Room name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -76,16 +76,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Doctor deleted successfully.';
+                        echo 'Doctor deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Doctor.';
+                        echo 'Error: Unable to delete Doctor. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: AM is required
-                    echo 'Error: AM is required.';
+                    echo 'Error: AM is required. ✳️';
                 }
                 break;
 
@@ -103,16 +103,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Specialty deleted successfully.';
+                        echo 'Specialty deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Specialty.';
+                        echo 'Error: Unable to delete Specialty. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Specialty name is required
-                    echo 'Error: Specialty name is required.';
+                    echo 'Error: Specialty name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -130,16 +130,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Patient deleted successfully.';
+                        echo 'Patient deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Patient.';
+                        echo 'Error: Unable to delete Patient. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Patient ID is required
-                    echo 'Error: Patient ID is required.';
+                    echo 'Error: Patient ID is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -157,16 +157,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Illness deleted successfully.';
+                        echo 'Illness deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Illness.';
+                        echo 'Error: Unable to delete Illness. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Illness name is required
-                    echo 'Error: Illness name is required.';
+                    echo 'Error: Illness name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -184,16 +184,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Medicine deleted successfully.';
+                        echo 'Medicine deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Medicine.';
+                        echo 'Error: Unable to delete Medicine. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Medicine name is required
-                    echo 'Error: Medicine name is required.';
+                    echo 'Error: Medicine name is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -211,16 +211,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Provider deleted successfully.';
+                        echo 'Provider deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Provider.';
+                        echo 'Error: Unable to delete Provider. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: AFM is required
-                    echo 'Error: AFM is required.';
+                    echo 'Error: AFM is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -238,16 +238,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Communication deleted successfully.';
+                        echo 'Communication deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Communication.';
+                        echo 'Error: Unable to delete Communication. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Communication ID is required
-                    echo 'Error: Communication ID is required.';
+                    echo 'Error: Communication ID is required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -266,16 +266,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Doctor&Specialty deleted successfully.';
+                        echo 'Doctor&Specialty deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Doctor&Specialty.';
+                        echo 'Error: Unable to delete Doctor&Specialty. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Doctor ID and Specialty name are required
-                    echo 'Error: Doctor ID and Specialty name are required.';
+                    echo 'Error: Doctor ID and Specialty name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -294,16 +294,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Doctor&Medicine deleted successfully.';
+                        echo 'Doctor&Medicine deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Doctor&Medicine.';
+                        echo 'Error: Unable to delete Doctor&Medicine. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Doctor ID and Medicine name are required
-                    echo 'Error: Doctor ID and Medicine name are required.';
+                    echo 'Error: Doctor ID and Medicine name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -322,16 +322,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Patient&Doctor deleted successfully.';
+                        echo 'Patient&Doctor deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Patient&Doctor.';
+                        echo 'Error: Unable to delete Patient&Doctor. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Patient ID and Doctor ID are required
-                    echo 'Error: Patient ID and Doctor ID are required.';
+                    echo 'Error: Patient ID and Doctor ID are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -350,16 +350,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Patient&Illness deleted successfully.';
+                        echo 'Patient&Illness deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Patient&Illness.';
+                        echo 'Error: Unable to delete Patient&Illness. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Patient ID and Illness name are required
-                    echo 'Error: Patient ID and Illness name are required.';
+                    echo 'Error: Patient ID and Illness name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
 
@@ -378,29 +378,29 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
                     // Execute SQL statement
                     if ($stmt->execute()) {
-                        echo 'Patient&Medicine deleted successfully.';
+                        echo 'Patient&Medicine deleted successfully. ✅' . '<br><br>Redirecting...';
                     } else {
-                        echo 'Error: Unable to delete Patient&Medicine.';
+                        echo 'Error: Unable to delete Patient&Medicine. ❎' . '<br><br>Redirecting...';
                     }
 
                     // Close prepared statement
                     $stmt->close();
                 } else {
                     // Error: Patient ID and Medicine name are required
-                    echo 'Error: Patient ID and Medicine name are required.';
+                    echo 'Error: Patient ID and Medicine name are required. ✳️' . '<br><br>Redirecting...';
                 }
                 break;
         }
     } else {
         // Error: formType or id is missing
-        echo 'Error: formType or id is missing.';
+        echo 'Error: formType or id is missing. ❎' . '<br><br>Redirecting...';
 
     }
     echo '<script>setTimeout(function(){ window.location.href = "index.php"; }, 2000);</script>';
     //header( "Refresh:5; http://localhost/database_website/index.php", true, 303);
 } else {
     // Error: Only accept GET requests
-    echo 'Error: Invalid request method.';
+    echo 'Error: Invalid request method. ❎' . '<br><br>Redirecting...';
     echo '<script>setTimeout(function(){ window.location.href = "index.php"; }, 2000);</script>';
     //header( "Refresh:5; http://localhost/database_website/index.php", true, 303);
 }
