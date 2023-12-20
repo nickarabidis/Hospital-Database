@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.tab1{
+    margin: 5px 5px 0 5px;
+    overflow: hidden;
+    border: 2px solid darkgreen;
+    background-color:lightskyblue;
+    display: flex;
+    justify-content: center;
+    padding-left:auto;
+    padding-right:auto;
+}
+.tab2{
+    margin: 0px 5px 0 5px;
+    overflow: hidden;
+    border-bottom: 2px solid darkgreen;
+    border-left: 2px solid darkgreen;
+    border-right: 2px solid darkgreen;
+    background-color:lightskyblue;
+    display: flex;
+    justify-content: center;
+    padding-left:auto;
+    padding-right:auto;
+}
+
+.tablinks{
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    transition: 0.5s;
+}
+.tablinks:hover{
+    background-color: lightgreen;
+}
+
+.tabcontent {
+    margin: 0 5px 5px 5px;
+    display:flex;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 2px solid darkgreen;
+    border-top: none;
+}
+
+.styleTable{
+    border-collapse: collapse;
+    margin: 25px 0 ;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styleTable th {
+    background-color: lightskyblue;
+    color: darkblue;
+    text-align: center;
+}
+.styleTable th,td{
+    padding: 12px 15px;
+}
+.styleTable td{
+    text-align: center;
+    border-right: 1px solid darkblue;
+}
+.styleTable tr {
+    border-bottom: 1px solid darkblue;
+}
+.styleTable tr:nth-child(even) {
+    background-color: #B6DA9F; 
+}
+.styleTable tr:nth-child(odd) {
+    background-color: #AFE1AF; 
+}
+.styleTable tr:last-of-type{
+    border-bottom: 2px solid darkblue;
+}
+.styleTable td:first-of-type{
+    border-left: 1px solid darkblue; 
+}
+
+.trash{
+    text-decoration: none;
+    color: darkblue;
+    padding: 15px;
+}
+.trash:hover{
+    color: red;
+}
+.open-button {
+    background-color: darkgreen;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 200px;
+}
+.form-popup {
+    box-sizing: content-box;
+    display: none;
+    max-height: 600px;
+    overflow: auto;
+    position: fixed;
+    bottom: 10;
+    right: 15px;
+    border: 2px solid darkgreen;
+    z-index: 9;
+}
+.form-container {
+    max-width: 320px;
+    padding: 10px;
+    background-color: lightcyan;                
+}
+.form-h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkblue;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.form-label{
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 700;
+}
+.form-container input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: lightblue;
+}
+.form-container input[type=text]:focus {
+    background-color: lightskyblue;
+    outline: none;
+}
+.form-container .btn {
+    background-color: darkgreen;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.form-container .cancel {
+    background-color: red;
+    margin-bottom: 0px;
+}
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
