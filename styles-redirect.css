@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+    font-size: large;
+}
+
+.error-p, .success-p, .adjust-p {
+    font-weight: bold;
+}
+
+.error-p { 
+    color: red;
+}
+
+.success-p {
+    color: limegreen;
+}
+
+.adjust-p {
+    color: navy;
+}
