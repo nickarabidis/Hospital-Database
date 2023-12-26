@@ -279,7 +279,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         isset($_POST['firstName']) &&
                         isset($_POST['dateOfBirth']) &&
                         isset($_POST['availability']) &&
-                        isset($_POST['communicationId'])
+                        isset($_POST['communicationId']) &&
+                        isset($_POST['roomName'])
                     ) {
                         // Retrieve values for other columns
                         $lastName = $_POST['lastName'];
@@ -287,15 +288,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $dateOfBirth = $_POST['dateOfBirth'];
                         $availability = $_POST['availability'];
                         $communicationId = $_POST['communicationId'];
+                        $roomName = $_POST['roomName'];
 
                         $selectKey = mysqli_query($conn, "SELECT patientId FROM patient WHERE patientId = '$patientId'");
 
                         if (mysqli_num_rows($selectKey) > 0) {
                             // Prepare SQL statement with placeholders
-                            $stmt = $conn->prepare("UPDATE patient SET lastName = ?, firstName = ?, dateOfBirth = ?, availability = ?, communicationId = ? WHERE patientId = ?");
+                            $stmt = $conn->prepare("UPDATE patient SET lastName = ?, firstName = ?, dateOfBirth = ?, availability = ?, communicationId = ?, roomName = ? WHERE patientId = ?");
 
                             // Bind parameters
-                            $stmt->bind_param("ssssss", $lastName, $firstName, $dateOfBirth, $availability, $communicationId, $patientId);
+                            $stmt->bind_param("sssssss", $lastName, $firstName, $dateOfBirth, $availability, $communicationId, $roomName, $patientId);
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
@@ -308,10 +310,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $stmt->close();
                         } else {
                             // Prepare SQL statement with placeholders
-                            $stmt = $conn->prepare("INSERT INTO patient (patientId, lastName, firstName, dateOfBirth, availability, communicationId) VALUES (?, ?, ?, ?, ?, ?)");
+                            $stmt = $conn->prepare("INSERT INTO patient (patientId, lastName, firstName, dateOfBirth, availability, communicationId, roomName) VALUES (?, ?, ?, ?, ?, ?, ?)");
 
                             // Bind parameters
-                            $stmt->bind_param("ssssss", $patientId, $lastName, $firstName, $dateOfBirth, $availability, $communicationId);
+                            $stmt->bind_param("sssssss", $patientId, $lastName, $firstName, $dateOfBirth, $availability, $communicationId, $roomName);
 
                             // Execute SQL statement
                             if ($stmt->execute()) {
