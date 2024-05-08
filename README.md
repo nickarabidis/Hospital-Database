@@ -5,6 +5,7 @@ This project is a database made for hospital with its specific requirements and 
 The project is built with **PHP**, **CSS** and **MySQL**.
 
 You can see the general requirements with the below ER Diagram:
+
 ![Final_ER_Diagram_O2_FINAL](https://github.com/nickarabidis/Hospital-Database/assets/75751845/6f666cc9-6ca5-4b0e-b0ac-1db6e1cbaf25)
 
 
